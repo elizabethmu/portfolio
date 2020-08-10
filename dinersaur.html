@@ -62,9 +62,9 @@
 
 		  <div class="collapse navbar-collapse" id="navbarsExample09">
 			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item  active"><a class="nav-link" href="index.html">Work</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-			  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+			  <li class="nav-item text-right active"><a class="nav-link" href="index.html">Work</a></li>
+        <li class="nav-item text-right"><a class="nav-link" href="about.html">About</a></li>
+			  <li class="nav-item text-right"><a class="nav-link" href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -72,30 +72,42 @@
 
 
 
-
-<div class="row section-space">
+<!-- hero starts -->
+<div class="row" style="padding: 50px 0">
 </div>
 
-<section class="page-title">
-  <div class="container vertical-expand">
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2">
-        <div class="text-center">
-          <h1>Dinersaur</h1>
-          <br>
-          <p>Split restaurant bills by who eats what</p>
+<div class="container-fluid">
+  <section class="page-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="text-center">
+            <h1>Dinersaur</h1>
+            <br>
+            <p>Split restaurant bills by who eats what</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
+
+<div class="row" style="padding: 20px 0">
+</div>
 
 <img src="images/dinersaur/dinersaur-hero.png" alt="" class="img-fluid">
+<!-- hero ends -->
 
 
 
-<!-- summary 1 starts -->
-    <section class="container vertical-expand">
+<!-- summary starts -->
+<section class="container-fluid">
+
+    <section class="container">
+
+      <div class="row" style="padding: 40px 0">
+      </div>
+
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <h2>Summary</h2>
@@ -122,24 +134,37 @@
         </div>
       </div>
     </section>
+  </section>
+  <!-- summary ends -->
 
 
+  <!-- problem starts -->
+  <div class="row" style="padding: 40px 0">
+  </div>
 
-    <section class="container section-space">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <h2>Problem</h2>
-            <p>Splitting a bill after a meal is often a headache. It’s socially awkward and mathematically challenging to find out who owes what.</p>
-            <img src="images/dinersaur/problem.png" alt="" class="text-center zoom">
+  <div class="container-fluid ">
+
+      <section class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+              <h2>Problem</h2>
+              <p>Splitting a bill after a meal is often a headache. It’s socially awkward and mathematically challenging to find out who owes what.</p>
+              <img src="images/dinersaur/problem.png" alt="" class="text-center zoom">
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-<div class="row" style="padding: 30px 0">
-</div>
+  </div>
+<!-- problem ends -->
 
 
-    <section class="container section-space">
+
+<!-- My Role starts -->
+<div class="container-fluid">
+    <div class="row" style="padding: 60px 0">
+    </div>
+
+    <section class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
             <h2>My Role</h2>
@@ -147,52 +172,70 @@
         </div>
       </div>
     </section>
-
-    <div class="row" style="padding: 20px 0">
-    </div>
-
-
-    <!-- design principles -->
-    <div class="container section-space">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <h2>Design Principles</h2>
-            <p>Below are the design principles I followed for Dinersaur. They are from Nielsen Norman’s heuristics:</p>
-            <br>
-
-          <!-- table 1: column 1 (icon), column 2 (principle), column 3 (description) -->
-            <table class="table">
-                <tbody>
-                  <tr>
-                    <td><img src="images/catering/consistency.png" alt="" class="small-icon"></td>
-                    <td>Consistency</td>
-                    <td>Use the same icons and words so that our users don't get confused.</td>
-                  </tr>
-                  <tr>
-                    <td><img src="images/catering/system-feedback.png" alt="" class="small-icon"></td>
-                    <td>System Feedback</td>
-                    <td>Provide reassurance when users complete an action. For example, when users place an order for 20 sandwiches, the application will display 20 as a confirmation.</td>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row" style="padding: 40px 0">
-    </div>
+</div>
+<!-- My Role end -->
 
 
 
-<!-- user research 2 starts -->
+
+
+
+<!-- design principles starts-->
+    <div class="container-fluid">
+
+          <div class="row" style="padding: 50px 0">
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                  <h2>Design Principles</h2>
+                  <p>The design principles I followed are Nielsen Norman’s heuristics:</p>
+
+                  <!-- table: display on phones, hide on desktop -->
+                    <table class="table hide-on-desktop">
+                        <tbody class="table">
+                          <tr>
+                            <td>Consistency</td>
+                          </tr>
+                          <tr>
+                            <td>System Feedback</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+
+                  <!-- table 1: display on desktops, hide on phones -->
+                  <table class="table hide-on-mobile">
+                      <tbody class="table">
+                        <tr>
+                          <td><img src="images/catering/consistency.png" alt="" class="small-icon"></td>
+                          <td>Consistency</td>
+                          <td>Use the same icons and words so that our users don't get confused.</td>
+                        </tr>
+                        <tr>
+                          <td><img src="images/catering/system-feedback.png" alt="" class="small-icon"></td>
+                          <td>System Feedback</td>
+                          <td>Provide reassurance when users complete an action. For example, when users place an order for 20 sandwiches, the application will display 20 as a confirmation.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+              </div>
+            </div>
+          </div>
+
+   </div>
+<!-- design principles end-->
+
+
+
+<!-- user research starts -->
 <div class="container-fluid">
 
-<div class="row" style="padding: 0">
-</div>
+      <div class="row" style="padding: 40px 0">
+      </div>
 
-
-      <div class="container-fluid">
         <section class="container">
             <div class="row">
               <div class="col-lg-8 offset-lg-2">
@@ -203,13 +246,10 @@
               </div>
             </div>
           </section>
-      </div>
-
-
 
         <section class="container">
           <div class="row">
-                  <section class="col-lg-2 offset-lg-2">
+                  <section class="col-lg-3 offset-lg-2">
                     <div class="card">
                         <img class="card-img-top" src="images/dinersaur/tony.png" alt="Card image cap">
                         <div class="card-body">
@@ -230,7 +270,7 @@
                         </div>
                       </div>
                   </section>
-                  <section class="col-lg-2">
+                  <section class="col-lg-3">
                     <div class="card">
                         <img class="card-img-top" src="images/dinersaur/rebecca.png" alt="Card image cap">
                         <div class="card-body">
@@ -251,7 +291,7 @@
                         </div>
                       </div>
                   </section>
-                  <section class="col-lg-2">
+                  <section class="col-lg-3">
                     <div class="card">
                         <img class="card-img-top" src="images/dinersaur/james.png" alt="Card image cap">
                         <div class="card-body">
@@ -272,13 +312,14 @@
                         </div>
                       </div>
                   </section>
+            </div>
         </section>
 
-<div class="row" style="padding: 40px 0">
-</div>
+    <div class="row" style="padding: 40px 0">
+    </div>
 
 </div>
-<!-- user research 2 ends -->
+<!-- user research ends -->
 
 
 
@@ -286,7 +327,6 @@
 <!-- market research= -->
 <div class="container-fluid">
 
-    <div class="container-fluid">
         <div class="row" style="padding: 20px 0">
         </div>
 
@@ -330,14 +370,12 @@
           </div>
         </section>
 
-    <div class="row" style="padding: 20px 0">
-    </div>
 </div>
 
 
     <!-- User Flow -->
-    <div class="container-fluid vertical-expand">
-      <div class="row" style="padding: 20px 0">
+    <div class="container-fluid">
+      <div class="row" style="padding: 60px 0">
       </div>
 
         <section class="container">
@@ -353,16 +391,16 @@
         </section>
     </div>
 
-    <div class="row" style="padding: 30px 0">
+    <div class="row" style="padding: 80px 0">
     </div>
 
 
 
 
     <!--  Navigation starts -->
-    <div class="container-fluid background-navy section-space">
+    <div class="container-fluid background-navy">
 
-      <div class="row" style="padding: 40px 0">
+      <div class="row" style="padding: 60px 0">
       </div>
 
       <section class="page-title">
@@ -403,10 +441,10 @@
 
 
 
-    <!--  Nav bar  starts -->
-    <div class="container-fluid section-space">
+    <!--  Nav bar starts -->
+    <div class="container-fluid">
 
-          <div class="row" style="padding: 40px 0">
+          <div class="row" style="padding: 60px 0">
           </div>
 
           <section class="page-title">
@@ -484,9 +522,9 @@
 
 
     <!--  Split the Bill starts -->
-    <div class="container-fluid background-navy section-space">
+    <div class="container-fluid background-navy">
 
-      <div class="row" style="padding: 40px 0">
+      <div class="row" style="padding: 60px 0">
       </div>
 
       <section class="page-title">
@@ -528,9 +566,9 @@
 
 
 
-      <!--  Minimize data entry 2 columns starts -->
-      <div class="container-fluid vertical-expand">
-        <div class="row" style="padding: 20px 0">
+      <!--  Minimize data entry starts -->
+      <div class="container-fluid">
+        <div class="row" style="padding: 60px 0">
         </div>
 
           <section class="container">
@@ -600,14 +638,14 @@
 
       <div class="row" style="padding: 30px 0">
       </div>
-      <!--  Minimize data entry 2 columns ends -->
+      <!--  Minimize data entry ends -->
 
 
 
-    <!--  Food data  starts -->
-    <div class="container-fluid background-gray section-space">
+    <!--  Food data starts -->
+    <div class="container-fluid background-gray">
 
-      <div class="row" style="padding: 30px 0">
+      <div class="row" style="padding: 40px 0">
       </div>
 
       <section class="page-title">
@@ -638,8 +676,10 @@
         </div>
       </section>
 
+      <div class="row" style="padding: 40px 0">
+      </div>
 
-        <section class="container vertical-expand">
+        <section class="container">
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
               <h4>From Manual Entry to Auto Scan</h4>
@@ -651,7 +691,10 @@
           </div>
         </section>
 
-        <section class="container vertical-expand">
+        <div class="row" style="padding: 40px 0">
+        </div>
+
+        <section class="container">
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
               <h4>Screen Flow: Auto Scan</h4>
@@ -662,7 +705,7 @@
           </div>
         </section>
 
-        <div class="row" style="padding: 10px 0">
+        <div class="row" style="padding: 50px 0">
         </div>
     </div>
     <!--  Food data ends -->
@@ -671,7 +714,7 @@
 
 
   <!--  People data  starts -->
-  <div class="container-fluid section-space">
+  <div class="container-fluid">
 
     <div class="row" style="padding: 40px 0">
     </div>
@@ -766,7 +809,7 @@
           </div>
         </section>
 
-      <div class="row" style="padding: 60px 0">
+      <div class="row" style="padding: 80px 0">
       </div>
   </div>
   <!--  People data ends -->
@@ -774,10 +817,10 @@
 
 
 
-      <!--  Dining Experience starts -->
-      <div class="container-fluid background-navy section-space">
+  <!--  Dining Experience starts -->
+  <div class="container-fluid background-navy">
 
-        <div class="row" style="padding: 40px 0">
+        <div class="row" style="padding: 60px 0">
         </div>
 
         <section class="page-title">
@@ -811,11 +854,15 @@
           </section>
           <div class="row" style="padding: 60px 0">
           </div>
-      </div>
-      <!--  Dining Experience ends -->
+  </div>
+  <!--  Dining Experience ends -->
 
 
-      <!--  Sharing plate starts -->
+
+
+<!--  Sharing plate starts -->
+<section class="container-fluid">
+
       <div class="row" style="padding: 60px 0">
       </div>
 
@@ -841,7 +888,7 @@
           </div>
           <div class="col-lg-3 offset-lg-2">
             <h4>Add a sharing plate</h4>
-            <img src="images/dinersaur/drag-to-sharing-plate.png" alt="">
+            <img src="images/dinersaur/drag-to-sharing-plate.png" alt="" style="padding-bottom: 40px">
           </div>
           <div class="col-lg-3 offset-lg-1">
             <h4>Remove sharing plate</h4>
@@ -850,7 +897,7 @@
         </div>
       </section>
 
-      <div class="row" style="padding: 60px 0">
+      <div class="row" style="padding: 40px 0">
       </div>
 
         <section class="container">
@@ -865,6 +912,7 @@
 
       <div class="row" style="padding: 60px 0">
       </div>
+  </section>
   <!--  Sharing plate starts -->
 
 
@@ -969,29 +1017,36 @@
 
 
 <!-- Retrospective starts -->
-<section class="container">
-  <div class="row" style="padding: 70px 0">
-  </div>
+<section class="container-fluid">
 
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <h2>Retrospective</h2>
-      <p>The challenges I ran into were mostly around navigation and the core user flow. A couple testing results took me by surprise; it was always a good idea to find out what problems users are facing instead of assuming they’re just like me.</p>
+  <section class="container">
+    <div class="row" style="padding: 70px 0">
     </div>
-  </div>
 
-  <div class="row" style="padding: 50px 0">
-  </div>
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h2>Retrospective</h2>
+        <p>The challenges I ran into were mostly around navigation and the core user flow. A couple testing results took me by surprise; it was always a good idea to find out what problems users are facing instead of assuming they’re just like me.</p>
+      </div>
+    </div>
+  </section>
+
+    <div class="row" style="padding: 50px 0">
+    </div>
+</section>
   <!-- Retrospective ends -->
 
 
   <!-- Impact starts -->
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <h2>Impact</h2>
-      <p>Dinersaur delivered a simple and elegant way of splitting a bill by who eats what, sending the receipt, and requesting payments. Our survey respondents especially commented on its playful branding, ease of use, and clean interface.</p>
-    </div>
-  </div>
+  <section class="container-fluid">
+    <section class="container">
+
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <h2>Impact</h2>
+          <p>Dinersaur delivered a simple and elegant way of splitting a bill by who eats what, sending the receipt, and requesting payments. Our survey respondents especially commented on its playful branding, ease of use, and clean interface.</p>
+        </div>
+      </div>
 
       <div class="row">
           <div class="col-lg-3 offset-lg-2">
@@ -1019,7 +1074,7 @@
               </div>
           </div>
       </div>
-
+    </section>
 </section>
 <!-- Impact ends -->
 
@@ -1027,31 +1082,30 @@
 
 
 <!-- Next Steps starts -->
-<section class="container">
-  <div class="row" style="padding: 50px 0">
-  </div>
+<section class="container-fluid">
+    <section class="container">
+      <div class="row" style="padding: 50px 0">
+      </div>
 
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <h2>Next Steps</h2>
-      <p>From a <span class="pink-red">business</span> perspective, it would be convenient to let users pay their share of the bill from the app. Dinersaur can link a credit card and let users send individual payments to the restaurant by scanning a QR code. Since restaurants are sometimes reluctant to accept multiple credit cards, Dinersaur needs to come up with incentives that can help them cooperate.</p>
-      <br>
-      <p>From a <span class="pink-red">programming</span> perspective, I recommend looking into affordable and accurate OCR technology to scan the receipt. Dinersaur would need access to payment service APIs such as Venmo.</p>
-      <br>
-    </div>
-  </div>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <h2>Next Steps</h2>
+          <p>From a <span class="pink-red">business</span> perspective, it would be convenient to let users pay their share of the bill from the app. Dinersaur can link a credit card and let users send individual payments to the restaurant by scanning a QR code. Since restaurants are sometimes reluctant to accept multiple credit cards, Dinersaur needs to come up with incentives that can help them cooperate.</p>
+          <br>
+          <p>From a <span class="pink-red">programming</span> perspective, I recommend looking into affordable and accurate OCR technology to scan the receipt. Dinersaur would need access to payment service APIs such as Venmo.</p>
+          <br>
+        </div>
+      </div>
 
-  </div>
+      </div>
+    </section>
 </section>
+
 <!-- Impact ends -->
 
 
 
-<div class="row" style="padding: 50px 0">
-</div>
-
-
-<div class="row" style="padding: 50px 0">
+<div class="row" style="padding: 100px 0">
 </div>
 
 

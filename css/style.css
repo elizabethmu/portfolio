@@ -118,6 +118,15 @@ h3 {
   font-size: 38px;
 }
 
+/********   h3 -- mobile  ********/
+@media only screen and (max-width: 575px) {
+  h3 {
+    /* section title */
+    font-size: 28px;
+  }
+}
+
+
 h4 {
   /* sub-title */
   font-family: "Source Sans Pro", sans-serif;
@@ -125,6 +134,13 @@ h4 {
   font-weight: 600;
   font-size: 24px;
   padding-bottom: 0;
+}
+
+/********   h4 -- mobile  ********/
+@media only screen and (max-width: 575px) {
+  h4 {
+    font-size: 22px;
+  }
 }
 
 h5 {
@@ -144,6 +160,13 @@ h6 {
   font-size: 16px;
   line-height: 1.5;
   font-style: italic;
+}
+
+/********   h6 -- mobile  ********/
+@media only screen and (max-width: 575px) {
+  h6 {
+    font-size: 13px;
+  }
 }
 
 p {
@@ -377,14 +400,22 @@ video {
 /*************************************** About Page ************************************/
 .hide-on-mobile {
   display: none;
+  line-height: normal;
+}
+
+.hide-on-desktop {
+  display: inherit;
 }
 
 @media only screen and (min-width: 788px) {
   .hide-on-mobile {
     display: inherit;
-    line-height: 0;
+    line-height: normal;
   }
-
+  .hide-on-desktop {
+    display: none;
+  }
+}
 
 
 /*************************************** Project gallery ************************************/
@@ -406,7 +437,6 @@ video {
   font-size: 16px;
   line-height: 14px;
   font-weight: 600;
-  box-shadow: #999999 0px 0px 0px 0px;
 }
 
 .btn:focus {
@@ -423,40 +453,6 @@ video {
 .btn-main:hover {
   color: #fff;
   background: #000;
-}
-
-.btn-black {
-  background: #000;
-  color: #fff;
-}
-
-.btn-black:hover {
-  background: var(--pink-red);
-  color: #fff;
-}
-
-.btn-white {
-  background: #fff;
-  color: #000;
-  border-color: #fff;
-}
-
-.btn-white:hover {
-  background: transparent;
-  color: #fff;
-}
-
-
-.bg-primary {
-  background: #f44336;
-}
-
-.bg-secondary {
-  background: #f7f7f7;
-}
-
-.bg-extra {
-  background: #e8eefb;
 }
 
 .page-title h1 {
@@ -479,10 +475,6 @@ video {
   padding: 0px;
 }
 
-.cd-headline {
-  font-size: 56px;
-  line-height: 70px;
-}
 
 .main-nav .header-top-socials a {
   text-transform: uppercase;
@@ -588,12 +580,12 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 }
 
 .portfolio .btn:focus, .portfolio .btn:hover, .portfolio .btn.focus.active {
-  box-shadow: none !important;
-  outline: 0 !important;
+  box-shadow: none;
+  outline: 0;
 }
 
 .portfolio .btn-group .btn {
-  border-radius: 0px !important;
+  border-radius: 0px;
   padding-left: 0px;
   font-weight: 700;
 }
@@ -745,22 +737,11 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 }
 
 
-/* ======================= typography -- media queries for desktop =================== */
-@media only screen and (max-width: 575px) {
-  h2 {
-    /* section title */
-    font-weight: 900;
-    font-size: 28px;
-  }
 
 /* tablets */
 /* @media (max-width: 768px) {
   .navbar-nav .dropdown-menu {
     position: absolute;
-  }
-  .cd-headline {
-    font-size: 32px;
-    line-height: 42px;
   }
   .btn-group, .btn-group-vertical {
     display: block;
@@ -782,19 +763,11 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
 
 /* small phones */
 /* @media (max-width: 576px) {
-  h2 {
-    font-size: 20px;
-  }
   h3 {
     font-size: 32px;
     line-height: 43px;
   }
-  .hero-text {
-    font-size: 12px;
-  }
-  .cd-headline {
-    font-size: 12px;
-  }
+
   .navbar-nav .dropdown-menu {
     position: absolute;
   }
@@ -821,10 +794,7 @@ ul.dropdown-menu > li > a:hover, .navbar ul ul ul.dropdown-menu li .nav-link:hov
   .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .cd-headline {
-    font-size: 32px;
-    line-height: 42px;
-  }
+
   .btn-group, .btn-group-vertical {
     display: block;
   }
