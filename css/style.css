@@ -363,7 +363,9 @@ a:hover {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
+
 img.avatar-icon {
   width: 120px;
   padding-bottom: 20px;
@@ -407,7 +409,7 @@ video {
   display: inherit;
 }
 
-@media only screen and (min-width: 788px) {
+@media only screen and (min-width: 575px) {
   .hide-on-mobile {
     display: inherit;
     line-height: normal;
