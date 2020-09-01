@@ -37,7 +37,7 @@ body {
     --pink-red: #e45479;
     --blue: #119af7;
     --black: #030D1A;
-    --gray: #818385;
+    --gray: #52565F;
     --green: #51BC97;
     /************ background colors **********/
     --bg-gray: #F3F3F3;
@@ -174,6 +174,7 @@ p {
   color: var(--gray);
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .image-caption {
@@ -408,6 +409,7 @@ video {
 .hide-on-desktop {
   display: inherit;
 }
+
 
 @media only screen and (min-width: 575px) {
   .hide-on-mobile {
